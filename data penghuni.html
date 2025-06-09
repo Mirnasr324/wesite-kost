@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data Penghuni Kost</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f8fafc;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    header {
+      background-color: #28a745;
+      padding: 15px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 6px;
+      margin-bottom: 25px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    thead {
+      background-color: #28a745;
+      color: white;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 14px 20px;
+      border-bottom: 1px solid #e1e1e1;
+    }
+
+    tbody tr:hover {
+      background-color: #f1f9f1;
+    }
+
+    .status-paid {
+      color: #28a745;
+      font-weight: 600;
+    }
+
+    .status-unpaid {
+      color: #dc3545;
+      font-weight: 600;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: #28a745;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #28a745;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-link:hover {
+      background-color: #28a745;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Data Penghuni Kost</h1>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="login.html">Logout</a>
+    </nav>
+  </header>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Nama Lengkap</th>
+        <th>Kamar</th>
+        <th>No. Telepon</th>
+        <th>Status Pembayaran</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mirna Sari</td>
+        <td>101</td>
+        <td>081234567890</td>
+        <td class="status-paid">Lunas</td>
+      </tr>
+      <tr>
+        <td>Budi Santoso</td>
+        <td>102</td>
+        <td>082345678901</td>
+        <td class="status-unpaid">Belum Lunas</td>
+      </tr>
+      <tr>
+        <td>Rina Dewi</td>
+        <td>103</td>
+        <td>083456789012</td>
+        <td class="status-paid">Lunas</td>
+      </tr>
+      <tr>
+        <td>Agus Prasetyo</td>
+        <td>104</td>
+        <td>084567890123</td>
+        <td class="status-unpaid">Belum Lunas</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <a href="dashboard.html" class="back-link">← Kembali ke Dashboard</a>
+
+</body>
+</html>
